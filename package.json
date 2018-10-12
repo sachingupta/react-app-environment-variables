@@ -8,9 +8,15 @@
     "react-scripts": "2.0.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "sh -ac '. .env.dev; react-scripts start",
+    "build": "sh -ac '. .env.dev; react-scripts build",
+    "test": "sh -ac '. .env.dev; react-scripts test",
+    "start-prod": "sh -ac '. .env.production; react-scripts start'",
+    "build-prod": "sh -ac '. .env.production; react-scripts build",
+    "test-prod": "sh -ac '. .env.production; react-scripts test",
+    "start-test": "sh -ac '. .env.test; react-scripts start'",
+    "build-test": "sh -ac '. .env.test; react-scripts build",
+    "test-test": "sh -ac '. .env.test; react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

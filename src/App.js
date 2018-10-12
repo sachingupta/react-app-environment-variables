@@ -9,8 +9,16 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Edit <code>src/App.js</code> and save to hi reload.
           </p>
+          <div> environment variable in react code </div>
+          <p>
+            environment NODE_ENV: {process.env.NODE_ENV}
+            </p>
+            <p>
+            environment REACT_APP_API: {process.env.REACT_APP_API}
+            </p>
+            
           <a
             className="App-link"
             href="https://reactjs.org"
